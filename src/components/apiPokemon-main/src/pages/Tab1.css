@@ -1,0 +1,18 @@
+.content{
+    width: 100%;
+    background-image: linear-gradient(to bottom right,var(--tw-gradient-stops));
+    --tw-gradient-to: #cffafe;
+    --tw-gradient-from: #eef2ff;
+    --tw-gradient-stops: var(--tw-gradient-from),#fff,var(--tw-gradient-to);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+.idiomas{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

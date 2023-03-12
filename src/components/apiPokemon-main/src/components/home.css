@@ -1,0 +1,182 @@
+.homeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titleHome{
+    font-family: __sfPro_e3af5c, __sfPro_Fallback_e3af5c, system-ui, sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    letter-spacing: -1.44px;
+    line-height: 70px;
+    text-decoration: none solid rgba(0, 0, 0, 0);
+    text-align: center;
+
+    
+}
+.spanEnglish{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+}
+.spanEspanol{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 21ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+}
+.spanFrances{
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 20ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+}
+
+.avatarPerfil{
+    width: 100px;
+    height: 100px;
+    background-color:  #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 8px 5px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    animation-duration: 4s;
+    animation-name: slidein;
+}
+
+.detallePerfil{
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 45rem;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none solid rgb(107, 114, 128);
+    text-align:justify;
+    vertical-align: top;
+    word-spacing: 0px;
+    animation-duration: 5s;
+    animation-name: slidein;
+}
+
+.cardExperiencia{
+    max-width: 30rem;
+    width: 90%;
+    background-color:  #FFFFFF;
+    border: 1px solid  #D1D5DB;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 15px 30px -6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-duration: 6s;
+    animation-name: slidein;
+
+}
+
+.cardExperiencia:hover{
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.titleCardExperiencia{
+    width: 100%;
+    text-align: center;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28px;
+    text-decoration: none solid rgb(0, 0, 0);
+    word-spacing: 0px;
+    border-bottom: 1px solid  #E5E7EB
+}
+.detailsCardExperiencia{
+    width: 100%;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none solid rgb(107, 114, 128);
+    text-align: left;
+    word-spacing: 0px;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid  #E5E7EB;
+    background-color:  #F9FAFB;
+    box-sizing: border-box;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.buttonCardExperiencia{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 5px;
+    margin: 5px;
+    border: 0px solid  #E5E7EB;
+    background-color:  #111827;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    text-decoration: none solid rgb(255, 255, 255);
+    text-align: center;
+    word-spacing: 0px;  
+    color: white;
+    cursor: pointer;
+}
+
+.iconWhite{
+    color: #F9FAFB;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .titleHome{
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 30px;       
+    }
+    .detallePerfil{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+@keyframes slidein {
+    from {
+      opacity:  0%;
+    }
+  
+    to {
+        opacity: 100%;
+    }
+  }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
