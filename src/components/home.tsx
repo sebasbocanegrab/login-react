@@ -1,13 +1,11 @@
 // import { IonButton, IonChip, IonIcon, IonLabel } from '@ionic/react';
 // import { newspaper } from 'ionicons/icons';
-import { IonButton } from '@ionic/react';
+// import { IonButton } from '@ionic/react';
+import React from 'react';
 import { useState, useEffect } from 'react';
 
 
-
-
-
-function DataPokens() {
+function Home() {
 
     const [datos, setDatos] = useState<any>(null);
 
@@ -28,13 +26,14 @@ function DataPokens() {
     return (
         
         
-        <div className='centrar'>
+        <div >
             {datos ? (
                 <div >
                     {datos.map((dato: any) => (
                         <div key={dato.name} >
-                        
-                        <IonButton href={`/post/${dato.name}`} >{dato.name}</IonButton>
+                        <div >{dato.name} <br/>                        
+                        <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${((dato.url).substring(34)).replace('/', '.')}png`} alt="" />
+                        </div>
                             <br/>
                         </div>
                     ))}
@@ -48,4 +47,4 @@ function DataPokens() {
     );
 }
 
-export default DataPokens;
+export default Home;

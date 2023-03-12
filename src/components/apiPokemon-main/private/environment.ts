@@ -1,1 +1,0 @@
-export const HOLA = 'hOLA mUNDO vARIABLE';

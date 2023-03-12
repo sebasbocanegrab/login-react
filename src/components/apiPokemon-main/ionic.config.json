@@ -1,7 +1,0 @@
-{
-  "name": "CrediFamiliar",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react"
-}
