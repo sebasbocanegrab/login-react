@@ -3,6 +3,7 @@
 // import { IonButton } from '@ionic/react';
 import React from 'react';
 import { useState, useEffect } from 'react';
+import './home.css'
 
 
 function Home() {
@@ -27,15 +28,18 @@ function Home() {
         
         
         <div >
+            
             {datos ? (
-                <div >
+                <div className='mapeo'>
                     {datos.map((dato: any) => (
+                        <a rel="noopener noreferrer" href={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${((dato.url).substring(34)).replace('/', '.')}png`}  target="_blank">
                         <div key={dato.name} >
-                        <div >{dato.name} <br/>                        
+                        <div className='contenedor'>{dato.name} <br/>                        
                         <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${((dato.url).substring(34)).replace('/', '.')}png`} alt="" />
                         </div>
                             <br/>
                         </div>
+                        </a>
                     ))}
                 </div>
             ) : (

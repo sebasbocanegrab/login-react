@@ -1,0 +1,13 @@
+.mapeo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+.contenedor{
+    background-color: aqua;
+    max-width: 20rem;
+    margin: 20px;
+}
